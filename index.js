@@ -23,7 +23,7 @@ const dbcunnect = async () => {
         await mongoose.connect(`mongodb+srv://${UID}:${PASS}@cluster0.kcyhikf.mongodb.net/toy-cars?retryWrites=true&w=majority`);
         console.log('Db is connect')
     } catch (error) {
-        console.log(error.message)
+       
     }
 }
 
