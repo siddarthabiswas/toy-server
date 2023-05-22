@@ -82,6 +82,7 @@ const userModel = mongoose.model('items',userSchema);
 
 app.post('/postData', async (req, res) => {
     const userDetles = req.body;
+    console.log(userDetles);
     try {
         const newUser = new userModel({
             seller_name: userDetles.seller_name,
