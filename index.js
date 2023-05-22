@@ -26,7 +26,7 @@ const dbcunnect = async () => {
         console.log(error.message)
     }
 }
-const schema = new mongoose.Schema();
+
 // user Schema
 const userSchema = new mongoose.Schema({
     seller_name: {
@@ -75,7 +75,7 @@ const userSchema = new mongoose.Schema({
 });
 
 // user model
-const userModel = mongoose.model('items',schema);
+const userModel = mongoose.model('items',userSchema);
 
 
 // data set
