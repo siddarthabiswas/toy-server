@@ -130,7 +130,7 @@ app.delete('/delet/:id', async (req, res) => {
     }
 })
 
-// find by id
+
 app.get('/user/:id', async (req, res) => {
     try {
         const id = req.params.id;
